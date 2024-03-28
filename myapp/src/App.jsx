@@ -1,20 +1,15 @@
-import "./App.css";
+import Content from "./Content";
+import Footer from "./Footer";
+import Header from "./Header";
 
-function App() {
-  const role = ["Python", "React", "Django", "UI/UX"];
-
-  const getRole = () => {
-    let randInt = Math.floor(Math.random() * 3);
-    return role[randInt];
-  };
+const App = () => {
   return (
     <>
-      <h1>Hello from Arun</h1>
-      <p>
-        Im a <strong>{getRole()}</strong> developer.
-      </p>
+      <Header />
+      <Content />
+      <Footer />
     </>
   );
-}
+};
 
 export default App;
